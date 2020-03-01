@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+</head>
+<body>
+	<h1 align="center">AUTOCARTAS APIREST</h1>
+	<table class="egt" border="1" height="300" align="center">
+	<caption>Listado de Endpoints y descripción corta</caption>
+		<tr >
+			<th width="150">Endpoint</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>/login</td>
+			<td>Busca el usuario en la base de datos y lo asigna a una variable local.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/login">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/login</a></td>
+		</tr>
+		<tr>
+			<td>/logout</td>
+			<td>Busca la sesión y en caso de encontrarla la borra y asigna el usuario del API a null.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/logout">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/logout</a></td>
+		</tr>
+		<tr>
+			<td>/newgame</td>
+			<td>Comprueba que la sesion no tenga una partida y la crea, en caso de haber una la devuelve.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/newgame">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/newgame</a></td>
+		</tr>
+		<tr>
+			<td>/resetgame</td>
+			<td>Busca y elimina la partida de ese usuario y le crea una nueva.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/resetgame">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/resetgame</a></td>
+		</tr>
+		<tr>
+			<td>/raffle</td>
+			<td>Elige un usuario de forma aleatoria indicando cual va a ser el primero en jugar.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/raffle">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/raffle</a></td>
+		</tr>
+		<tr>
+			<td>/playcard</td>
+			<td>recibe las elecciones del usuario y ejecuta la partida.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/playcard">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/playcard</a></td>
+		</tr>
+		<tr>
+			<td>/ready</td>
+			<td>Asigna las variables necesarias para el CPU y avisa al usuario para que haga su jugada.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/ready">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/ready</a></td>
+		</tr>
+		<tr>
+			<td>/stats</td>
+			<td>Devuelve un listado de usuarios ordenados en base a sus estadísticas.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/stats">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/stats</a></td>
+		</tr>
+		<tr>
+			<th colspan="2">CRUD</th>
+		</tr>
+		<tr>
+			<td>/users</td>
+			<td>Devuelve un listado de los usuarios registrados en la base de datos.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- GET = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/users">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/raffle</a></td>
+		</tr>
+		<tr>
+			<td>/users/{user}</td>
+			<td>Busca el usuario indicado y en caso de encontrarlo lo devuelve.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- GET = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/users/{user}">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/users/{user}</a></td>
+		</tr>
+		<tr>
+			<td>/users</td>
+			<td>Crea un nuevo usuario en la base de datos y avisa del resultado de la operación.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/users">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/users</a></td>
+		</tr>
+		<tr>
+			<td>/users/{user}/{attr}/{newvalue}</td>
+			<td>Edita el campo del usuario indicado por el valor nuevo también indicado.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- PUT = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/users/{user}/{attr}/{newvalue}">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/users/{user}/{attr}/{newvalue}</a></td>
+		</tr>
+		<tr>
+			<td>/users/{user}</td>
+			<td>Intenta eliminar el usuario indicado y avisa del resultado.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- DELETE = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/users/{user}">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/users/{user}</a></td>
+		</tr>
+		<tr>
+			<td>/coches</td>
+			<td>Devuelve un listado de los coches registrados en la base de datos.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- GET = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches</a></td>
+		</tr>
+		<tr>
+			<td>/coches/{id}</td>
+			<td>Busca el coche con el id indicado y en caso de encontrarlo lo devuelve.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- GET = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches/{id}">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches/{id}</a></td>
+		</tr>
+		<tr>
+			<td>/coches</td>
+			<td>Crea un nuevo coche en la base de datos y avisa del resultado de la operación.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- POST = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches</a></td>
+		</tr>
+		<tr>
+			<td>/coches/{idCoche}/{attr}/{newvalue}</td>
+			<td>Edita el campo del coche indicado por el valor nuevo también indicado.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- PUT = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches/{idCoche}/{attr}/{newvalue}">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches/{idCoche}/{attr}/{newvalue}</a></td>
+		</tr>
+		<tr>
+			<td>/coches/{idCoche}</td>
+			<td>Intenta eliminar el coche con el id indicado y avisa del resultado.</td>
+		</tr>
+		<tr>
+			<td colspan="2">- DELETE = <a href="http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches/{idCoche}">
+			http://localhost:8081/AUTOCARTASREST/rest/restcoches/coches/{idCoche}</a></td>
+		</tr>
+	</table>
+</body>
+</html>
