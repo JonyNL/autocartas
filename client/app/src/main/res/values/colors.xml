@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e9deb6</color>
+    <color name="colorPrimaryDark">#948554</color>
+    <color name="colorAccent">#a381bf</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="game_bg_text">#E9DEB6</color>
+    <color name="game_bg">@color/colorPrimary</color>
+    <color name="game_btn_text_color">@color/colorPrimaryDark</color>
+    <color name="btn_colors">#EDEADA</color>
+</resources>

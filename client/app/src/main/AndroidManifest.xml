@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jonyn.autocartas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="locked"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ActivityNewUrl"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ActivityEditObj"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ActivityDeleteObj"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ActivityCreateObj"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ActivityGetObj"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ActivityGetObjects"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ActivityCrud"
+            android:screenOrientation="locked"/>
+        <activity
+            android:name=".SesionActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".RankingActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GamescreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
