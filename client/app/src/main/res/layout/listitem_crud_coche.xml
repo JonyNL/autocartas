@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/ivCCoche"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_weight="3"
+        app:srcCompat="@drawable/_1a" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_id" />
+
+        <TextView
+            android:id="@+id/tvCModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_modelo" />
+
+        <TextView
+            android:id="@+id/tvCPais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_pais" />
+
+        <TextView
+            android:id="@+id/tvCMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_motor" />
+
+        <TextView
+            android:id="@+id/tvCCilindros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_cilindros" />
+
+        <TextView
+            android:id="@+id/tvCPotencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_potencia" />
+
+        <TextView
+            android:id="@+id/tvCRevXmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_revxmin" />
+
+        <TextView
+            android:id="@+id/tvCVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_velocidad" />
+
+        <TextView
+            android:id="@+id/tvCConsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coche_consumo" />
+
+    </LinearLayout>
+</LinearLayout>

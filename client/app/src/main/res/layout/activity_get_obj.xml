@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityGetObj">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Spinner
+        android:id="@+id/spObjects"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSelect"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llCoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spObjects">
+
+        <ImageView
+            android:id="@+id/ivCCoche"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="3"
+            app:srcCompat="@drawable/_1a" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_id" />
+
+            <TextView
+                android:id="@+id/tvCModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_modelo" />
+
+            <TextView
+                android:id="@+id/tvCPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_pais" />
+
+            <TextView
+                android:id="@+id/tvCMotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_motor" />
+
+            <TextView
+                android:id="@+id/tvCCilindros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_cilindros" />
+
+            <TextView
+                android:id="@+id/tvCPotencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_potencia" />
+
+            <TextView
+                android:id="@+id/tvCRevXmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_revxmin" />
+
+            <TextView
+                android:id="@+id/tvCVelocidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_velocidad" />
+
+            <TextView
+                android:id="@+id/tvCConsumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coche_consumo" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spObjects">
+
+        <TextView
+            android:id="@+id/tvCUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crud_user"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crud_name" />
+
+        <TextView
+            android:id="@+id/tvCPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crud_passwd" />
+
+        <TextView
+            android:id="@+id/tvCWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wins_count" />
+
+        <TextView
+            android:id="@+id/tvCTies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ties_count" />
+
+        <TextView
+            android:id="@+id/tvCLoses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loses_count" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
